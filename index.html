@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanchonete Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Pedidos</h1>
+        <form id="pedidoForm">
+            <input type="text" id="clienteNome" placeholder="Nome do Cliente" required>
+            <select id="produtoSelect" required>
+               
+                <option value="">Selecione seu lanche</option>
+            </select>
+            <button type="submit">Cadastrar Pedido</button>
+           
+        </form>
+        <div class="container"></div>
+        <h2>Pedidos em Andamento</h2>
+        <div id="pedidosEmExecucao" class="card-container"></div>
+       
+        <h2>Pedidos em Entrega</h2>
+        <div id="pedidosEmEntrega" class="card-container">
+        </div>
+
+        <button id="verFinalizados">Finalizados</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
